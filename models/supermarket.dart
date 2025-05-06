@@ -8,7 +8,7 @@ class Supermarket {
   Supermarket({required this.name, required this.location});
 
   void addProduct(Product product) {
-    // Check if product with same title already exists
+    
     var existing = inventory.firstWhere(
       (p) => p.title == product.title,
       orElse: () => Product(
